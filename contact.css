@@ -1,0 +1,27 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-section {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    flex-direction: row;
+    height: 60%;
+}
+
+.contact-container {
+    flex: 0 0 auto;
+}
+
+.contact-company-info {
+    padding-top: 20px;
+    height: 30%;
+}
+
+@media all and (max-width: 480px) {
+    .contact-section {
+        flex-direction: column;
+    }
+}
