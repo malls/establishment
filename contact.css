@@ -9,10 +9,19 @@ a {
     overflow-x: auto;
     flex-direction: row;
     height: 60%;
+    padding-top: 40px;
 }
 
 .contact-container {
     flex: 0 0 auto;
+}
+
+.contact-container > img {
+    display: inline-block;
+}
+
+.contact-container > .contact-info {
+    display: inline-block;
 }
 
 .contact-company-info {
