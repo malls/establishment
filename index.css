@@ -1,0 +1,50 @@
+.horizontal-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-direction: row;
+    height: 100%;
+}
+
+.massive > img {
+    max-height: 100%;
+}
+
+.massive {
+    display: inline-block;
+}
+
+.credit-text {
+    max-height: 100%;
+    display: inline-block;
+    writing-mode: sideways-lr;
+    align-self: flex-end;
+    padding-bottom: 20px;
+}
+
+
+@media all and (max-width: 480px) {
+    .horizontal-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-y: auto;
+        flex-direction: column;
+    }
+
+    .massive {
+        display: block;
+        max-width: 100%;
+    }
+
+    .massive > img {
+        max-width: 100%;
+    }
+
+    .credit-text {
+        display: block;
+        writing-mode: horizontal-tb;
+        align-self: normal;
+        padding-bottom: 20px;
+    } 
+}

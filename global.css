@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Louize Display";
+    src: url("//db.onlinewebfonts.com/t/1bdad24b22e34e9602883f76332345e6.eot");
+    src: url("//db.onlinewebfonts.com/t/1bdad24b22e34e9602883f76332345e6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1bdad24b22e34e9602883f76332345e6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1bdad24b22e34e9602883f76332345e6.woff") format("woff"), url("//db.onlinewebfonts.com/t/1bdad24b22e34e9602883f76332345e6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1bdad24b22e34e9602883f76332345e6.svg#Louize Display") format("svg");
+} 
+
 html, body {
     color: black;
     height: 100%;
@@ -30,19 +36,19 @@ header {
 
 .credit-text {
     /* used for works and runaway credits */
-    font-family: Louize-Display;
+    font-family: "Louize Display";
     font-size: 12pt; 
 }
 
 .caption-text {
-    /* light variant of helvetica for this and body */
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 150;
     font-size: 9pt;
 }
 
 .body-text {
-    /* light variant of helvetica for this and body */
-    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 150;
     font-size: 12pt;
     text-justify: inter-word;
     /* could also be 10? justified */
