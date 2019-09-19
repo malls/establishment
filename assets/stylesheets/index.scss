@@ -16,11 +16,17 @@
 }
 
 .credit-text {
+    text-align: right;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
     max-height: 100%;
     display: inline-block;
-    writing-mode: sideways-lr;
     align-self: flex-end;
     padding-bottom: 20px;
+    width: 20px;
+    /* writing-mode: sideways-lr; */
+    /* -webkit-writing-mode: sideways-lr;
+    -ms-writing-mode: sideways-lr; */
 }
 
 
@@ -46,5 +52,7 @@
         writing-mode: horizontal-tb;
         align-self: normal;
         padding-bottom: 20px;
-    } 
+        -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: horizontal-tb;
+} 
 }
