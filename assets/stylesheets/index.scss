@@ -1,11 +1,15 @@
 .horizontal-container {
-    display: flex;
+    display: inline-block;
     overflow-x: auto;
+    overflow-y: hidden;
+    height: 100%;
+    white-space: nowrap;
+    width: 100%;
 }
 
 .section-container {
     display: flex;
-    // flex: 0 0 auto;
+    flex: 0 0 auto;
     // max-width: 50vw;
 }
 
@@ -16,17 +20,11 @@
 
 @media all and (min-width: 601px) {
 
-    .full-height-image, a {
-        // height: 100%;
-    }
-
-    .full-height-image {
-        height: 100%;
-    }
-
     .credit-text {
         writing-mode: sideways-lr;
         padding: 5px 40px 50px 10px;
+        width: 20px;
+        height: 100%;
     }
 
 }

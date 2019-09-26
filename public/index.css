@@ -1,20 +1,25 @@
 .horizontal-container {
-  display: flex;
-  overflow-x: auto; }
+  display: inline-block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 100%;
+  white-space: nowrap;
+  width: 100%; }
 
 .section-container {
-  display: flex; }
+  display: flex;
+  flex: 0 0 auto; }
 
 .pad-name {
   margin-bottom: 30px;
   display: inline-block; }
 
 @media all and (min-width: 601px) {
-  .full-height-image {
-    height: 100%; }
   .credit-text {
     writing-mode: sideways-lr;
-    padding: 5px 40px 50px 10px; } }
+    padding: 5px 40px 50px 10px;
+    width: 20px;
+    height: 100%; } }
 
 @media all and (max-width: 600px) {
   .horizontal-container {
