@@ -16,6 +16,9 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, main, nav, ins {
   font-family: inherit;
   font-size: 100%; }
 
+div {
+  scrollbar-width: none; }
+
 header, footer {
   z-index: 100; }
 

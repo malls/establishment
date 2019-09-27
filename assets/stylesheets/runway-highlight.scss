@@ -3,12 +3,17 @@
     // display: flex;
     // flex-wrap: wrap;
     overflow-y: hidden;
-    overflow-x: auto;
-    // min-width: 1000%;
+    
+    width: max-content;
     // flex-direction: row;
 
 }
+.horiz-parent{
+width: 100%;
+overflow-x: scroll;
+// scrollbar-width: none;
 
+}
 .runway-highlight-name {
     position: absolute;
     bottom: 30px;
@@ -31,7 +36,8 @@
 }
 
 
+
 .runway-hightlight-image {
-    height: 100%;
-    display: inline-block;
+  
+    display: inline;
 }

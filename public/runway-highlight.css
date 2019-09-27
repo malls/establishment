@@ -1,7 +1,11 @@
 .horiz-scroll-full-height {
   height: 100%;
   overflow-y: hidden;
-  overflow-x: auto; }
+  width: max-content; }
+
+.horiz-parent {
+  width: 100%;
+  overflow-x: scroll; }
 
 .runway-highlight-name {
   position: absolute;
@@ -20,5 +24,4 @@
     font-size: 20px; }
 
 .runway-hightlight-image {
-  height: 100%;
-  display: inline-block; }
+  display: inline; }
