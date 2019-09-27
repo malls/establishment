@@ -19,6 +19,7 @@
   position: relative; }
 
 .grid-runway-caption {
+  padding: 5px;
   width: 20px;
   background-color: white;
   position: absolute;
