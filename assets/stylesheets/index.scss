@@ -1,16 +1,18 @@
 .horizontal-container {
-    display: inline-block;
+    display: inline-flex;
     overflow-x: auto;
     overflow-y: hidden;
     height: 100%;
     white-space: nowrap;
     width: 100%;
+    flex-direction: row;
 }
 
 .section-container {
     display: flex;
     flex: 0 0 auto;
-    // max-width: 50vw;
+    position: relative;
+
 }
 
 .pad-name {
@@ -18,13 +20,18 @@
     display: inline-block;
 }
 
+.full-height-image {
+    position: absolute; 
+    bottom: 0;
+    left: 40px;
+    max-height: 100%;
+}
+
 @media all and (min-width: 601px) {
 
-    .credit-text {
-        writing-mode: sideways-lr;
+    .pad-credit-text {
         padding: 5px 40px 50px 10px;
         width: 20px;
-        height: 100%;
     }
 
 }
@@ -39,7 +46,6 @@
         height: auto;
         width: 100%;
     }
-
 
     .credit-text {
         writing-mode: lr;

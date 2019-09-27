@@ -19,9 +19,8 @@
   position: relative; }
 
 .grid-runway-caption {
-  writing-mode: sideways-lr;
   width: 20px;
   background-color: white;
   position: absolute;
   bottom: 0;
-  height: 100%; }
+  text-align: center; }
