@@ -18,6 +18,10 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, main, nav, ins {
     font-size: 100%;
 }
 
+header, footer {
+    z-index: 100;
+}
+
 body {
     height: 100%;
     display: flex;
