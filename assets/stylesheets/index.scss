@@ -29,7 +29,7 @@
 
 .full-height-image {
     display: block;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 @media all and (min-width: 601px) {
@@ -45,15 +45,21 @@
     .horizontal-container {
         overflow-y: auto;
         flex-direction: column;
+        a {
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+        }
+        .full-height-image {
+            object-fit: none;
+            width: 100%;
+        }
+    
+        .credit-text {
+            writing-mode: lr;
+            transform: rotate(0deg);
+            padding: 5px 10px;
+        }
     }
 
-    .full-height-image {
-        height: auto;
-        width: 100%;
-    }
-
-    .credit-text {
-        writing-mode: lr;
-        transform: rotate(0deg);
-    }
 }

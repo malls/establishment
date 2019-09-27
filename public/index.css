@@ -22,7 +22,7 @@
 
 .full-height-image {
   display: block;
-  object-fit: fill; }
+  object-fit: cover; }
 
 @media all and (min-width: 601px) {
   .pad-credit-text {
@@ -33,9 +33,14 @@
   .horizontal-container {
     overflow-y: auto;
     flex-direction: column; }
-  .full-height-image {
-    height: auto;
-    width: 100%; }
-  .credit-text {
-    writing-mode: lr;
-    transform: rotate(0deg); } }
+    .horizontal-container a {
+      flex-direction: column;
+      height: auto;
+      width: 100%; }
+    .horizontal-container .full-height-image {
+      object-fit: none;
+      width: 100%; }
+    .horizontal-container .credit-text {
+      writing-mode: lr;
+      transform: rotate(0deg);
+      padding: 5px 10px; } }
