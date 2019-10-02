@@ -28,4 +28,8 @@ a {
 
 @media all and (max-width: 480px) {
   .contact-section {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .contact-container > .contact-info {
+    padding-left: 0px;
+    padding-bottom: 20px;
+    padding-top: 10px; } }
