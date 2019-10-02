@@ -9,7 +9,8 @@
     padding-bottom: 50px; }
   .archive-container .archive-image {
     display: inline-block;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    max-height: 50vh; }
   .archive-container .regular-scroll {
     display: inline;
     padding-left: 50px;
