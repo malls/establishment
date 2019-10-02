@@ -1,13 +1,12 @@
 tasks
-archive page
-index set page
 center or check spacing on sidebar
 X position absolute from bottom
 X bars in mobile mode
-push to heroku
 bug patrick
-
+no skewing on archive page
+hack version of sideways text
 
 to confirm
+mobile and other browsers across the board
 logo weight or svg or whatever
 X bars in mobile mode

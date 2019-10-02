@@ -22,4 +22,5 @@
   .archive-container .regular-scroll {
     padding: 0; }
   .archive-container .archive-image {
-    width: 100%; } }
+    width: 100%;
+    max-height: none; } }
