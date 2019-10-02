@@ -1,0 +1,41 @@
+.archive-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    
+    .archive-caption {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 50px; 
+    }
+
+    .archive-image {
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    .regular-scroll {
+        display: inline;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+}
+
+
+@media all and (max-width: 600px) {
+
+    .archive-container {
+        .regular-scroll {
+            padding: 0;
+        }
+    
+        .archive-image {
+            width: 100%;
+        }
+
+    }
+}
