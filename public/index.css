@@ -38,7 +38,7 @@
       height: auto;
       width: 100%; }
     .horizontal-container .full-height-image {
-      object-fit: none;
+      object-fit: scale-down;
       width: 100%; }
     .horizontal-container .credit-text {
       writing-mode: lr;
