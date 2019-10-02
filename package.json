@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "css": "node-sass ./assets/stylesheets/ -o ./public/ -w",
     "dev": "npm run css & nodemon"
   },
