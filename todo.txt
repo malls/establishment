@@ -1,0 +1,13 @@
+tasks
+archive page
+index set page
+center or check spacing on sidebar
+X position absolute from bottom
+X bars in mobile mode
+push to heroku
+bug patrick
+
+
+to confirm
+logo weight or svg or whatever
+X bars in mobile mode

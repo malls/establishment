@@ -1,0 +1,14 @@
+
+
+.third-grid {
+    width: 33vw;
+    height: 100%;
+    background-image: url("https://picsum.photos/600/900");
+    padding-right: 15px;
+    display: inline-block;
+
+}
+
+.third-grid:first-child {
+    background-image: none;
+}
