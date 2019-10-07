@@ -79,5 +79,6 @@ footer {
   border-radius: 4px; }
 
 .sideways {
-  writing-mode: sideways-lr;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
   height: 100%; }

@@ -22,6 +22,9 @@
     }
 }
 
+.pad-sideways {
+    margin-bottom: 60px;
+}
 
 .pad-name {
     margin-bottom: 30px;
@@ -35,8 +38,9 @@
 @media all and (min-width: 601px) {
 
     .pad-credit-text {
-        padding: 5px 40px 50px 10px;
+        padding: 5px 10px 0px 40px;
         width: 20px;
+        margin-top: -40px;
     }
 
 }
@@ -59,6 +63,7 @@
             writing-mode: lr;
             transform: rotate(0deg);
             padding: 5px 10px;
+            margin-top: 0px;
         }
     }
 
