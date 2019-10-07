@@ -53,9 +53,9 @@ header {
 .body-text {
   font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 150;
-  font-size: 12pt;
+  font-size: 11pt;
   text-justify: inter-word;
-  /* could also be 10? justified */ }
+  letter-spacing: 2px; }
 
 footer {
   border-top: 1px solid black;
