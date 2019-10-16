@@ -78,7 +78,8 @@ footer {
   border: 1px solid black;
   border-radius: 4px; }
 
-.sideways {
-  writing-mode: tb-rl;
-  transform: rotate(-180deg);
-  height: 100%; }
+@media all and (min-width: 600px) {
+  .sideways {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    height: 100%; } }

@@ -6,28 +6,26 @@
   overflow-y: hidden;
   position: relative; }
 
-.horizontal-container {
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  height: 100%;
-  width: 100%; }
-  .horizontal-container a {
-    flex-direction: row;
-    height: 100%;
-    display: flex; }
-
 .pad-sideways {
   margin-bottom: 60px; }
 
 .pad-name {
   margin-bottom: 30px; }
 
-.full-height-image {
-  display: block;
-  object-fit: cover; }
-
 @media all and (min-width: 601px) {
+  .horizontal-container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%; }
+    .horizontal-container a {
+      flex-direction: row;
+      height: 100%;
+      display: flex; }
+  .full-height-image {
+    display: block;
+    object-fit: cover; }
   .pad-credit-text {
     padding: 5px 10px 0px 40px;
     width: 20px;
@@ -35,17 +33,16 @@
 
 @media all and (max-width: 600px) {
   .horizontal-container {
-    overflow-y: auto;
-    flex-direction: column; }
+    overflow-x: hidden;
+    overflow-y: auto; }
     .horizontal-container a {
-      flex-direction: column;
-      height: auto;
-      width: 100%; }
+      display: inline-block; }
     .horizontal-container .full-height-image {
-      object-fit: scale-down;
-      width: 100%; }
+      display: inline-block;
+      height: auto;
+      width: 100%;
+      max-width: 100%; }
     .horizontal-container .credit-text {
-      writing-mode: lr;
-      transform: rotate(0deg);
+      display: inline-block;
       padding: 5px 10px;
       margin-top: 0px; } }
