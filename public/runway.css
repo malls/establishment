@@ -25,3 +25,11 @@
   position: absolute;
   bottom: 0;
   text-align: center; }
+
+@media all and (max-width: 600px) {
+  .outer-grid-wrapper {
+    flex-basis: 100%; }
+  .grid-runway-caption {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px; } }

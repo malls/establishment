@@ -3,6 +3,12 @@
   width: 100%;
   height: 100%;
   overflow: auto; }
+  .archive-container .regular-scroll {
+    display: inline;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
   .archive-container .archive-caption {
     display: block;
     padding-top: 10px;
@@ -11,12 +17,6 @@
     display: inline-block;
     padding-bottom: 10px;
     max-height: 50vh; }
-  .archive-container .regular-scroll {
-    display: inline;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px; }
 
 @media all and (max-width: 600px) {
   .archive-container .regular-scroll {

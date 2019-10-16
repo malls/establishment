@@ -4,6 +4,14 @@
     height: 100%;
     overflow: auto;
     
+    .regular-scroll {
+        display: inline;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
     .archive-caption {
         display: block;
         padding-top: 10px;
@@ -16,13 +24,6 @@
         max-height: 50vh;
     }
 
-    .regular-scroll {
-        display: inline;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
 
 }
 

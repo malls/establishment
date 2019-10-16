@@ -1,28 +1,42 @@
-.horiz-parent {
-  width: 100%;
-  overflow-x: scroll;
-  height: 100%; }
+.runway-highlight-name a {
+  font-family: Arial, Helvetica, sans-serif; }
 
-.horiz-scroll-full-height {
-  height: 100%;
-  overflow-y: hidden;
-  width: max-content; }
-
-.runway-highlight-name {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  width: 30px;
-  background-color: white; }
-  .runway-highlight-name div {
-    padding-bottom: 50px; }
-  .runway-highlight-name a {
-    position: absolute;
-    top: 170px;
+@media all and (min-width: 601px) {
+  .horiz-parent {
     width: 100%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px; }
+    overflow-x: scroll;
+    height: 100%; }
+  .horiz-scroll-full-height {
+    height: 100%;
+    overflow-y: hidden;
+    width: max-content; }
+  .runway-highlight-name {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 30px;
+    background-color: white; }
+    .runway-highlight-name div {
+      padding-bottom: 50px; }
+    .runway-highlight-name a {
+      position: absolute;
+      top: 170px;
+      width: 100%;
+      text-align: center;
+      font-size: 20px; }
+  .runway-hightlight-image {
+    display: inline; } }
 
-.runway-hightlight-image {
-  display: inline; }
+@media all and (max-width: 600px) {
+  .horiz-parent {
+    overflow-x: hidden;
+    overflow-y: scroll; }
+  .runway-highlight-name {
+    padding: 20px;
+    width: 100%; }
+    .runway-highlight-name .pad-sideways {
+      display: inline;
+      margin: 0; }
+    .runway-highlight-name a {
+      position: absolute;
+      right: 20px; } }
