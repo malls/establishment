@@ -2,10 +2,13 @@
     display: flex;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow-y: auto;
     
     .regular-scroll {
-        display: inline;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        display: flex;
+        align-content: flex-start;
         padding-left: 50px;
         padding-right: 50px;
         padding-top: 20px;
@@ -15,7 +18,8 @@
     .archive-caption {
         display: block;
         padding-top: 10px;
-        padding-bottom: 50px; 
+        padding-bottom: 50px;
+        width: 100%;
     }
 
     .archive-image {
@@ -32,10 +36,11 @@
     .archive-container {
         .regular-scroll {
             padding: 0;
+            display: block;
         }
 
         .archive-image {
-            width: 100%;
+            object-fit: contain;
             max-height: none; 
         }
 

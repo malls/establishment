@@ -2,9 +2,12 @@
   display: flex;
   width: 100%;
   height: 100%;
-  overflow: auto; }
+  overflow-y: auto; }
   .archive-container .regular-scroll {
-    display: inline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: flex-start;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
@@ -12,7 +15,8 @@
   .archive-container .archive-caption {
     display: block;
     padding-top: 10px;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    width: 100%; }
   .archive-container .archive-image {
     display: inline-block;
     padding-bottom: 10px;
@@ -20,7 +24,8 @@
 
 @media all and (max-width: 600px) {
   .archive-container .regular-scroll {
-    padding: 0; }
+    padding: 0;
+    display: block; }
   .archive-container .archive-image {
-    width: 100%;
+    object-fit: contain;
     max-height: none; } }
