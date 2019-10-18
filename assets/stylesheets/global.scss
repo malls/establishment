@@ -19,7 +19,7 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, main, nav, ins {
 }
 
 header, footer {
-    z-index: 100;
+    z-index: 1000;
 }
 
 body {
@@ -38,12 +38,16 @@ a {
 }
 
 header {
+    height: 40px;
+    
+    background-image: url("/establishment-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
     padding: 25px; 
-    text-align: center;
-    border-bottom: 1px solid black;
-    font-family: "HelveticaNeue-Roman", Helvetica, Arial, sans-serif;
     font-size: 25pt; 
-    font-weight: 100;
+    border-bottom: 1px solid black;
 }
 
 .menu-text {
