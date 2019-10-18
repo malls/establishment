@@ -4,6 +4,7 @@
 .horiz-parent {
   width: 100%;
   overflow-x: scroll;
+  overflow-y: hidden;
   height: 100%; }
 
 @media all and (min-width: 601px) {
