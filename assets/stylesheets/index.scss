@@ -2,9 +2,10 @@
     display: flex;
     width:100%;
     height: 100%;
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: hidden;
     position: relative;
+    align-items: flex-start;
 }
 
 .pad-sideways {
@@ -16,38 +17,41 @@
 }
 
 @media all and (min-width: 601px) {
-    .horizontal-container {
-        display: flex;
-        overflow-x: auto;
-        overflow-y: hidden;
-        height: 100%;
-        width: 100%;
-        
+    .parent-horizontal-flex {
         a {
-            flex-direction: row;
             height: 100%;
-            display: flex;
+            padding-right: 40px;
+            position: relative;
         }
     }
     
     .full-height-image {
-        display: block;
-        object-fit: cover;
+        display: inline-block;
+        width: auto;
+        height: 100%;
+        max-height: 100vh;
     }
 
     .pad-credit-text {
-        padding: 5px 10px 0px 40px;
+        display: inline-block;
+        // padding: 5px 10px 0px 40px;
         width: 20px;
         margin-top: -40px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 10px;
+
     }
 
 }
 
 @media all and (max-width: 600px) {
 
-    .horizontal-container {
+    .parent-horizontal-flex {
         overflow-x: hidden;
         overflow-y: auto;
+        flex-direction: column;
         
         a {
             display: inline-block;

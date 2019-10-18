@@ -2,9 +2,10 @@
   display: flex;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: hidden;
-  position: relative; }
+  position: relative;
+  align-items: flex-start; }
 
 .pad-sideways {
   margin-bottom: 60px; }
@@ -13,35 +14,36 @@
   margin-bottom: 30px; }
 
 @media all and (min-width: 601px) {
-  .horizontal-container {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
+  .parent-horizontal-flex a {
     height: 100%;
-    width: 100%; }
-    .horizontal-container a {
-      flex-direction: row;
-      height: 100%;
-      display: flex; }
+    padding-right: 40px;
+    position: relative; }
   .full-height-image {
-    display: block;
-    object-fit: cover; }
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    max-height: 100vh; }
   .pad-credit-text {
-    padding: 5px 10px 0px 40px;
+    display: inline-block;
     width: 20px;
-    margin-top: -40px; } }
+    margin-top: -40px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 10px; } }
 
 @media all and (max-width: 600px) {
-  .horizontal-container {
+  .parent-horizontal-flex {
     overflow-x: hidden;
-    overflow-y: auto; }
-    .horizontal-container a {
+    overflow-y: auto;
+    flex-direction: column; }
+    .parent-horizontal-flex a {
       display: inline-block; }
-    .horizontal-container .full-height-image {
+    .parent-horizontal-flex .full-height-image {
       display: inline-block;
       height: auto;
       width: 100%;
       max-width: 100%; }
-    .horizontal-container .credit-text {
+    .parent-horizontal-flex .credit-text {
       padding: 5px 20px;
       margin-top: 0px; } }
