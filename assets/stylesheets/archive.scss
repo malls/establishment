@@ -34,14 +34,21 @@
 @media all and (max-width: 600px) {
 
     .archive-container {
+        overflow-x: hidden;
+
+        .archive-caption {
+            padding-left: 20px;
+        }
+
         .regular-scroll {
             padding: 0;
             display: block;
-        }
+            width: 100%;
 
-        .archive-image {
-            object-fit: contain;
-            max-height: none; 
+            .archive-image {
+                width: 100%;
+                max-height: none;
+            }
         }
 
     }

@@ -23,9 +23,14 @@
     max-height: 50vh; }
 
 @media all and (max-width: 600px) {
-  .archive-container .regular-scroll {
-    padding: 0;
-    display: block; }
-  .archive-container .archive-image {
-    object-fit: contain;
-    max-height: none; } }
+  .archive-container {
+    overflow-x: hidden; }
+    .archive-container .archive-caption {
+      padding-left: 20px; }
+    .archive-container .regular-scroll {
+      padding: 0;
+      display: block;
+      width: 100%; }
+      .archive-container .regular-scroll .archive-image {
+        width: 100%;
+        max-height: none; } }
