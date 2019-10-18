@@ -19,7 +19,7 @@
     width: 100%; }
   .archive-container .archive-image {
     display: inline-block;
-    padding-bottom: 2px;
+    padding-bottom: 10px;
     max-height: 50vh; }
 
 @media all and (max-width: 600px) {
@@ -35,4 +35,5 @@
       width: 100vw; }
       .archive-container .regular-scroll .archive-image {
         width: 100vw;
-        max-height: none; } }
+        max-height: none;
+        padding-bottom: 2px; } }

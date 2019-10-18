@@ -24,7 +24,7 @@
 
     .archive-image {
         display: inline-block;
-        padding-bottom: 2px;
+        padding-bottom: 10px;
         max-height: 50vh;
     }
 
@@ -49,6 +49,7 @@
             .archive-image {
                 width: 100vw;
                 max-height: none;
+                padding-bottom: 2px;
             }
         }
 
