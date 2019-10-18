@@ -33,5 +33,5 @@
       display: block;
       width: 100%; }
       .archive-container .regular-scroll .archive-image {
-        width: 100%;
+        width: 100vw;
         max-height: none; } }
