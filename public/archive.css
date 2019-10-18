@@ -19,7 +19,7 @@
     width: 100%; }
   .archive-container .archive-image {
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     max-height: 50vh; }
 
 @media all and (max-width: 600px) {

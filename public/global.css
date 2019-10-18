@@ -33,14 +33,13 @@ a {
 
 header {
   height: 40px;
-  background-image: url("/establishment-logo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 40%;
+  text-align: center;
   cursor: pointer;
-  padding: 25px;
-  font-size: 25pt;
-  border-bottom: 1px solid black; }
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  border-bottom: 1px solid black;
+  font-family: "HelveticaNeue-Roman", Helvetica, Arial, sans-serif; }
 
 .menu-text {
   font-family: "HelveticaNeue-Roman", Helvetica, Arial, sans-serif;
