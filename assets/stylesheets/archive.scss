@@ -24,7 +24,7 @@
 
     .archive-image {
         display: inline-block;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
         max-height: 50vh;
     }
 
@@ -38,12 +38,13 @@
         .archive-caption {
             padding-left: 20px;
             padding-right: 20px;
+            width: calc(100vw - 40px);
         }
 
         .regular-scroll {
             padding: 0;
             display: block;
-            width: 100%;
+            width: 100vw;
 
             .archive-image {
                 width: 100vw;
