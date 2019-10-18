@@ -13,6 +13,7 @@
 }
 
 .pad-name {
+    // TODO maybe remove?
     margin-bottom: 30px;
 }
 
@@ -34,14 +35,12 @@
 
     .pad-credit-text {
         display: inline-block;
-        // padding: 5px 10px 0px 40px;
-        width: 20px;
+        // width: 20px;
         margin-top: -40px;
         height: 100%;
         position: absolute;
         top: 0;
         right: 10px;
-
     }
 
 }
