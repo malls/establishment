@@ -22,9 +22,14 @@
   padding: 5px;
   background-color: white;
   position: absolute;
-  bottom: 0;
   left: 0;
   text-align: center; }
+
+/* Safari 10.1+ (alternate method) */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .grid-runway-caption {
+      left: -10px; } } }
 
 @media all and (max-width: 600px) {
   .outer-grid-wrapper {

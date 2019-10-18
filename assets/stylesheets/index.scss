@@ -30,17 +30,26 @@
         display: inline-block;
         width: auto;
         height: 100%;
-        max-height: 100vh;
+        max-height: calc(100vh - 47px - 85px);
+
     }
 
     .pad-credit-text {
         display: inline-block;
-        // width: 20px;
         margin-top: -40px;
         height: 100%;
         position: absolute;
         top: 0;
         right: 10px;
+    }
+
+    //horrible hack
+    @-moz-document url-prefix() {
+        .parent-horizontal-flex {
+            a {
+                padding-right: 30px;
+            }
+        }
     }
 
 }
