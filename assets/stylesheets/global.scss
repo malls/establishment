@@ -4,6 +4,8 @@
     src: url("//db.onlinewebfonts.com/t/1bdad24b22e34e9602883f76332345e6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1bdad24b22e34e9602883f76332345e6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1bdad24b22e34e9602883f76332345e6.woff") format("woff"), url("//db.onlinewebfonts.com/t/1bdad24b22e34e9602883f76332345e6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1bdad24b22e34e9602883f76332345e6.svg#Louize Display") format("svg");
 }
 
+@font-face {font-family: "Louize"; src: url("//db.onlinewebfonts.com/t/df180f85d58e18017bf4cfa28468be6b.eot"); src: url("//db.onlinewebfonts.com/t/df180f85d58e18017bf4cfa28468be6b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/df180f85d58e18017bf4cfa28468be6b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/df180f85d58e18017bf4cfa28468be6b.woff") format("woff"), url("//db.onlinewebfonts.com/t/df180f85d58e18017bf4cfa28468be6b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/df180f85d58e18017bf4cfa28468be6b.svg#Louize") format("svg"); } 
+
 html, body, div, span,  object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
 del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
@@ -60,7 +62,7 @@ header {
 
 .credit-text {
     /* used for works and runaway credits */
-    font-family: "Louize Display";
+    font-family: "Louize";
     font-size: 12pt;
     font-style: italic;
 }
@@ -82,7 +84,6 @@ header {
 footer {
     border-top: 1px solid black;
     display: flex;
-    flex-direction: left;
     flex-wrap: nowrap;
     justify-content: space-between;
     flex-shrink: 0;
