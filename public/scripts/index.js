@@ -3,7 +3,7 @@
     let page = 'index';
 
     const path = window.location.pathname;
-    const specificPage = window.location.search ? `-${window.location.search.split('=')[1]}` : ''
+    const specificPage = window.location.search ? `/${window.location.search.split('=')[1]}` : ''
 
     if (path.includes('archive')) {
         page = 'archive';
@@ -103,7 +103,7 @@
             let body = '<div class="vert-scroll-4x4-grid">'
 
             data.forEach(item => {
-                body +=`<a class="outer-grid-wrapper" href="${item.url}" style="background-image: url(${item.image})">
+                body +=`<a class="outer-grid-wrapper" href="runway-highlight.html?page=${item.highlightcsv}" style="background-image: url(${item.image})">
                         <div class="grid-runway-caption credit-text sideways">
                             ${item.collection}
                             <span class="pad-name">${item.season}</span></div>
@@ -113,6 +113,26 @@
             });
 
             return body + '</div>';
+        },
+        runwayhighlight(data) {
+            data = data[0];
+            let body = `
+                <div class="runway-highlight-name">
+                    <div class="credit-text sideways pad-sideways">
+                        ${data.collection}
+                        <span class="pad-name">${data.season}</span>
+                    </div>
+                    <a href="/runway.html">X</a>
+                </div>
+                <div class="horiz-parent">
+                <div class="horiz-scroll-full-height">`;
+
+             data.images.split(',').forEach(item => {
+                console.log(item);
+                body += `<img src="${item}" class="runway-hightlight-image" alt="">`;
+             });
+
+            return body + '</div></div>';
         }
     }
 
