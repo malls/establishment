@@ -10,7 +10,8 @@
   flex: 0 0 auto; }
 
 .contact-container > img {
-  display: inline-block; }
+  display: inline-block;
+  max-width: 311px; }
 
 .contact-container > .contact-info {
   display: inline-block;
