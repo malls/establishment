@@ -8,10 +8,17 @@
     padding-bottom: 50px; }
   .archive-container .archive-image {
     break-inside: avoid-column;
+    page-break-inside: avoid;
+    display: inline-grid;
     margin-bottom: 20px; }
     .archive-container .archive-image img {
       width: 100% !important;
       height: auto !important; }
+
+/* for Chrome and Edge */
+@supports (break-inside: avoid-column) {
+  .archive-image {
+    display: block; } }
 
 @media all and (min-width: 1201px) {
   .archive-image-container {

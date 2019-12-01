@@ -12,13 +12,23 @@
     }
 
     .archive-image {
-    	break-inside: avoid-column;
+      break-inside: avoid-column;
+      page-break-inside: avoid;
+      display: inline-grid;
+
     	margin-bottom: 20px;
 		img {
 			width: 100% !important;
 			height: auto !important;
 		}
     }
+}
+
+/* for Chrome and Edge */
+@supports (break-inside: avoid-column) {
+  .archive-image  {
+    display: block;
+  }
 }
 
 @media all and (min-width: 1201px) {
