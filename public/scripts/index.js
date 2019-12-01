@@ -98,6 +98,21 @@
                 <a href="mailto:info@establishmentnewyork.com">info@establishmentnewyork.com</a>
             </div>`;
 
+        },
+        runway(data) {
+            let body = '<div class="vert-scroll-4x4-grid">'
+
+            data.forEach(item => {
+                body +=`<a class="outer-grid-wrapper" href="${item.url}" style="background-image: url(${item.image})">
+                        <div class="grid-runway-caption credit-text sideways">
+                            ${item.collection}
+                            <span class="pad-name">${item.season}</span></div>
+                        </a>`;
+
+
+            });
+
+            return body + '</div>';
         }
     }
 
@@ -109,13 +124,6 @@
             document
                 .querySelector('header')
                 .insertAdjacentHTML('afterend', templateMethods[page.replace('-','')](results.data));
-            if (path.includes('archive')) {
-                // const msnry = new Masonry( '.grid', {
-                //       // columnWidth: 200,
-                //       itemSelector: '.grid-item',
-                //       gutter: 10
-                // });
-            }
         }
     });
 
