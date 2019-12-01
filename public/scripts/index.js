@@ -57,18 +57,12 @@
                         ${item.title}
                         <br>
                         <br>
-                        Lorem Ipsum Dorem
-                        <br>
-                        Morit
-                        <br>
-                        Favim Isig iopsi
-                        <br>
                         <a href="https://instagram.com/${item.instagram.replace('@','')}">${item.instagram}</a>
                         <br>
                         <br>
                         <a href="mailto:${item.email}">${item.email}</a>
-
-                    </div>`
+                    </div>
+                </div>`
 
             });
             
