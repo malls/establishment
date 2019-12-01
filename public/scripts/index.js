@@ -18,6 +18,10 @@
     }
 
     const templateMethods = {
+        archive(data) {
+            let body = '';
+            return body;
+        },
         index(data) {
             let body = '';
 
@@ -43,7 +47,6 @@
             let body = '';
 
             data.forEach(item => {
-            console.log('contact runs', item)
                 body += `<div class="contact-container">
                     <img src="images/${item.imageurl}" alt="">
 
@@ -91,17 +94,17 @@
 
         }
     }
-
-
-
-
+console.log('on the page at all')
     Papa.parse(`http://localhost:3000/csvs/${page}${specificPage}.csv`, {
         download: true,
         header: true,
-        complete: function(results) {
-            console.log(results);
-            document.getElementById('replacer').innerHTML = templateMethods[page.replace('-','')](results.data);
+        complete: (results) => {
+            console.log('results')
+            console.log(results)
+            document
+                .querySelector('header')
+                .insertAdjacentHTML('afterend', templateMethods[page.replace('-','')](results.data));
         }
-    })
+    });
 
 })(window, document, Papa);
