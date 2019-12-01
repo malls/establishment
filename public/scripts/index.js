@@ -19,8 +19,20 @@
 
     const templateMethods = {
         archive(data) {
-            let body = '';
-            return body;
+
+            let body = `<div class="archive-container"><div class="archive-image-container">`;
+
+            data.forEach(item => {
+                body += `
+                    <div class="archive-image">
+                        <img src="${item.image}">
+                        <br/>
+                        ${item.caption}
+                    </div>
+            `
+            });
+
+            return body + '</div></div>';
         },
         index(data) {
             let body = '';
@@ -88,16 +100,22 @@
 
         }
     }
-console.log('on the page at all')
+
     Papa.parse(`http://localhost:3000/csvs/${page}${specificPage}.csv`, {
         download: true,
         header: true,
         complete: (results) => {
-            console.log('results')
             console.log(results)
             document
                 .querySelector('header')
                 .insertAdjacentHTML('afterend', templateMethods[page.replace('-','')](results.data));
+            if (path.includes('archive')) {
+                // const msnry = new Masonry( '.grid', {
+                //       // columnWidth: 200,
+                //       itemSelector: '.grid-item',
+                //       gutter: 10
+                // });
+            }
         }
     });
 
