@@ -101,7 +101,7 @@
         }
     }
 
-    Papa.parse(`http://localhost:3000/csvs/${page}${specificPage}.csv`, {
+    Papa.parse(`csvs/${page}${specificPage}.csv`, {
         download: true,
         header: true,
         complete: (results) => {
