@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "css": "node-sass ./assets/stylesheets/ -o ./public/ -w",
+    "css": "node-sass ./assets/stylesheets/ -o ./public/stylesheets -w",
     "dev": "npm run css & nodemon"
   },
   "repository": {
