@@ -33,14 +33,6 @@
         return body;
     }
 
-
-    [].forEach.call(document.getElementsByClassName('menu-item'), (el) => {
-        el.classList.remove('menu-item-active');
-    });
-
-    // document.getElementById('replacer').innerHTML = makeIndexBody(createIndexPhotos(dummyData));
-
-
     Papa.parse('http://localhost:3000/csvs/index.csv', {
         download: true,
         header: true,
@@ -49,6 +41,5 @@
         }
     })
 
-    document.getElementById('index-tab').classList.add('menu-item-active');
 
 })(Papa);
