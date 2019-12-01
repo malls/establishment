@@ -39,7 +39,7 @@
 
             data.forEach(item => {
                 body += `
-                    <a href="${item.url}">
+                    <a href="project-highlight?page=${item.csv}">
                     <img class="full-height-image" src="images/${item.image}">
                     <div class="sideways credit-text pad-credit-text">
                         <span class="pad-name">${item.caption}</span>
@@ -103,7 +103,7 @@
             let body = '<div class="vert-scroll-4x4-grid">'
 
             data.forEach(item => {
-                body +=`<a class="outer-grid-wrapper" href="runway-highlight.html?page=${item.highlightcsv}" style="background-image: url(${item.image})">
+                body +=`<a class="outer-grid-wrapper" href="runway-highlight?page=${item.highlightcsv}" style="background-image: url(${item.image})">
                         <div class="grid-runway-caption credit-text sideways">
                             ${item.collection}
                             <span class="pad-name">${item.season}</span></div>
@@ -128,11 +128,30 @@
                 <div class="horiz-scroll-full-height">`;
 
              data.images.split(',').forEach(item => {
-                console.log(item);
                 body += `<img src="${item}" class="runway-hightlight-image" alt="">`;
              });
 
             return body + '</div></div>';
+        },
+        projecthighlight(data) {
+            data = data[0];
+            let body = `
+                <div class="runway-highlight-name">
+                    <div class="credit-text sideways pad-sideways">
+                        ${data.project}
+                        <span class="pad-name">photography by ${data.photographer}</span>
+                    </div>
+                    <a href="/">X</a>
+                </div>
+                <div class="horiz-parent">
+                    <div class="horiz-scroll-full-height">
+                        <div class="third-grid"></div>`;
+
+            data.images.split(',').forEach(item => {
+                body += `<div class="third-grid" style="background-image: url(${item})"></div>`;
+            });
+
+            return body + '</div></div>'
         }
     }
 
@@ -140,7 +159,6 @@
         download: true,
         header: true,
         complete: (results) => {
-            console.log(results)
             document
                 .querySelector('header')
                 .insertAdjacentHTML('afterend', templateMethods[page.replace('-','')](results.data));

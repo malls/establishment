@@ -6,6 +6,8 @@
   overflow-x: scroll;
   overflow-y: hidden;
   height: 100%; }
+  .horiz-parent img {
+    vertical-align: top; }
 
 @media all and (min-width: 601px) {
   .horiz-scroll-full-height {
