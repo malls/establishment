@@ -74,7 +74,20 @@
             return `<div class="contact-section">
                 ${body}
             </div>
-            `;
+            <div class="contact-company-info">
+                ESTABLISHMENT
+                <br>
+                CASTING
+                <br>
+                <br>
+                NYC / LONDON
+                <br>
+                <br>
+                +1 917 444 1422
+                <br>
+                <br>
+                <a href="mailto:info@establishmentnewyork.com">info@establishmentnewyork.com</a>
+            </div>`;
 
         }
     }
