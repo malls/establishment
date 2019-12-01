@@ -43,14 +43,15 @@
             let body = '';
 
             data.forEach(item => {
-                `<div class="contact-container">
-                    <img src="${data.imageurl}" alt="">
+            console.log('contact runs', item)
+                body += `<div class="contact-container">
+                    <img src="images/${item.imageurl}" alt="">
 
                     <div class="contact-info">
-                        ${data.name}
+                        ${item.name}
                         <br>
                         <br>
-                        ${data.title}
+                        ${item.title}
                         <br>
                         <br>
                         Lorem Ipsum Dorem
@@ -59,10 +60,10 @@
                         <br>
                         Favim Isig iopsi
                         <br>
-                        <a href="https://instagram.com/${data.instagram}">${data.instagram}</a>
+                        <a href="https://instagram.com/${item.instagram.replace('@','')}">${item.instagram}</a>
                         <br>
                         <br>
-                        <a href="mailto:${data.email}">${data.email}</a>
+                        <a href="mailto:${item.email}">${item.email}</a>
 
                     </div>`
 
@@ -85,6 +86,7 @@
         download: true,
         header: true,
         complete: function(results) {
+            console.log(results);
             document.getElementById('replacer').innerHTML = templateMethods[page.replace('-','')](results.data);
         }
     })
