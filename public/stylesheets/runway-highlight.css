@@ -36,6 +36,8 @@
   .horiz-parent {
     overflow-x: hidden;
     overflow-y: scroll; }
+    .horiz-parent img {
+      max-width: 100%; }
   .runway-highlight-name {
     padding: 20px;
     width: 100%; }
