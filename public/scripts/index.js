@@ -59,7 +59,7 @@
 
             data.forEach(item => {
                 body += `<div class="contact-container">
-                    <img src="images/${item.imageurl}" alt="">
+                    <img src="images/contact/${item.imageurl}" alt="">
 
                     <div class="contact-info">
                         ${item.name}

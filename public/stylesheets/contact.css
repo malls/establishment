@@ -11,7 +11,8 @@
 
 .contact-container > img {
   display: inline-block;
-  max-width: 311px; }
+  max-height: 380px;
+  max-width: 100%; }
 
 .contact-container > .contact-info {
   display: inline-block;
