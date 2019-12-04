@@ -27,7 +27,7 @@
                     <div class="archive-image">
                         <img src="images/archive/${item.image}">
                         <br/>
-                        ${item.caption}
+                        <span>${item.caption || '&nbsp'}</span>
                     </div>
             `
             });
