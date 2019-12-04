@@ -25,7 +25,7 @@
             data.forEach(item => {
                 body += `
                     <div class="archive-image">
-                        <img src="images/archive/${item.collection}/${item.image}">
+                        <img src="images/archive/${item.image}">
                         <br/>
                         ${item.caption}
                     </div>
