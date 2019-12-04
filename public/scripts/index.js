@@ -103,7 +103,7 @@
             let body = '<div class="vert-scroll-4x4-grid">'
 
             data.forEach(item => {
-                body +=`<a class="outer-grid-wrapper" href="runway-highlight?page=${item.highlightcsv}" style="background-image: url(${item.image})">
+                body +=`<a class="outer-grid-wrapper" href="runway-highlight?page=${item.highlightcsv}" style="background-image: url(/images/runway/${item.highlightcsv}/${item.image})">
                         <div class="grid-runway-caption credit-text sideways">
                             ${item.collection}
                             <span class="pad-name">${item.season}</span></div>
@@ -114,7 +114,7 @@
 
             return body + '</div>';
         },
-        runwayhighlight(data) {
+        runwayhighlight(data, folder) {
             data = data[0];
             let body = `
                 <div class="runway-highlight-name">
@@ -128,7 +128,7 @@
                 <div class="horiz-scroll-full-height">`;
 
              data.images.split(',').forEach(item => {
-                body += `<img src="${item}" class="runway-hightlight-image" alt="">`;
+                body += `<img src="/images/runway/${folder.replace('/','')}/${item}" class="runway-hightlight-image" alt="">`;
              });
 
             return body + '</div></div>';
@@ -161,7 +161,7 @@
         complete: (results) => {
             document
                 .querySelector('header')
-                .insertAdjacentHTML('afterend', templateMethods[page.replace('-','')](results.data));
+                .insertAdjacentHTML('afterend', templateMethods[page.replace('-','')](results.data, specificPage));
         }
     });
 
