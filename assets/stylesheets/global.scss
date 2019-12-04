@@ -24,6 +24,10 @@ header, footer {
     z-index: 1000;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     height: 100%;
     display: flex;
