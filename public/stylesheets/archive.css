@@ -4,12 +4,12 @@
   overflow-y: auto; }
   .archive-container .archive-image-container {
     width: 100%;
-    column-gap: 30px; }
+    column-gap: 40px; }
   .archive-container .archive-image {
     break-inside: avoid-column;
     page-break-inside: avoid;
     display: inline-grid;
-    margin-bottom: 17px; }
+    margin-bottom: 25px; }
     .archive-container .archive-image img {
       width: 100% !important;
       height: auto !important; }

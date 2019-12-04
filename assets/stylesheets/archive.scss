@@ -7,7 +7,7 @@
     .archive-image-container {
       width: 100%;
 
-      column-gap: 30px;
+      column-gap: 40px;
     }
 
     .archive-image {
@@ -15,7 +15,7 @@
       page-break-inside: avoid;
       display: inline-grid;
 
-    	margin-bottom: 17px;
+    	margin-bottom: 25px;
 		img {
 			width: 100% !important;
 			height: auto !important;

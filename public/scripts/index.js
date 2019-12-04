@@ -26,7 +26,6 @@
                 body += `
                     <div class="archive-image">
                         <img src="images/archive/${item.image}">
-                        <br/>
                         <span>${item.caption || '&nbsp'}</span>
                     </div>
             `
