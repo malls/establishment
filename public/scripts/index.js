@@ -114,20 +114,20 @@
             return body + '</div>';
         },
         runwayhighlight(data, folder) {
-            data = data[0];
+            const firstRow = data[0];
             let body = `
                 <div class="runway-highlight-name">
                     <div class="credit-text sideways pad-sideways">
-                        ${data.collection}
-                        <span class="pad-name">${data.season}</span>
+                        ${firstRow.collection}
+                        <span class="pad-name">${firstRow.season}</span>
                     </div>
                     <a href="/runway.html">X</a>
                 </div>
                 <div class="horiz-parent">
                 <div class="horiz-scroll-full-height">`;
 
-             data.images.split(',').forEach(item => {
-                body += `<img src="/images/runway/${folder.replace('/','')}/${item}" class="runway-hightlight-image" alt="">`;
+             data.forEach(item => {
+                body += `<img src="/images/runway/${folder.replace('/','')}/${item.images}" class="runway-hightlight-image" alt="">`;
              });
 
             return body + '</div></div>';
