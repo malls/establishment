@@ -39,7 +39,7 @@
             data.forEach(item => {
                 body += `
                     <a href="project-highlight?page=${item.csv}">
-                    <img class="full-height-image" src="images/${item.image}">
+                    <img class="full-height-image" src="images/project-highlight/${item.csv}/${item.image}">
                     <div class="sideways credit-text pad-credit-text">
                         <span class="pad-name">${item.caption}</span>
                         <span class="pad-name">photography ${item.photographer}</span>
@@ -132,13 +132,13 @@
 
             return body + '</div></div>';
         },
-        projecthighlight(data) {
-            data = data[0];
+        projecthighlight(data, folder) {
+            const firstRow = data[0];
             let body = `
                 <div class="runway-highlight-name">
                     <div class="credit-text sideways pad-sideways">
-                        ${data.project}
-                        <span class="pad-name">photography by ${data.photographer}</span>
+                        ${firstRow.project}
+                        <span class="pad-name">photography by ${firstRow.photographer}</span>
                     </div>
                     <a href="/">X</a>
                 </div>
@@ -146,8 +146,9 @@
                     <div class="horiz-scroll-full-height">
                         <div class="third-grid"></div>`;
 
-            data.images.split(',').forEach(item => {
-                body += `<div class="third-grid" style="background-image: url(${item})"></div>`;
+            data.forEach(item => {
+                console.log('item', item)
+                body += `<div class="third-grid" style="background-image: url('/images/project-highlight${folder}/${item.images}')"></div>`;
             });
 
             return body + '</div></div>'
