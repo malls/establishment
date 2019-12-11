@@ -30,19 +30,19 @@
   }
 }
 
-@media all and (min-width: 1401px) {
+@media all and (min-width: 1601px) {
   .archive-image-container {
     column-count: 5;
   }
 }
 
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1600px) {
   .archive-image-container {
     column-count: 4;
   }
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1300px) {
   .archive-image-container {
     column-count: 3;
   }
