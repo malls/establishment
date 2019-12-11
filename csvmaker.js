@@ -8,7 +8,7 @@ for (let i = 1; i < 13; i++) {
 
         tpl += res.map(item => ',,'+item).join('\n');
 
-        fs.writeFile('./csvs/project-highlight/' + i + '.csv', tpl, 'utf8', console.error);
+        fs.writeFile('./public/csvs/project-highlight/' + i + '.csv', tpl, 'utf8', console.error);
 
         console.log(tpl);
 

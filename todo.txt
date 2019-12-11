@@ -1,9 +1,0 @@
-tasks
-center or check spacing on sidebar
-bug patrick
-no skewing on archive page
-get rid of sideways text on mobile
-
-to confirm
-mobile and other browsers across the board
-logo weight or svg or whatever

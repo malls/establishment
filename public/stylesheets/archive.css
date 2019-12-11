@@ -19,22 +19,22 @@
   .archive-image {
     display: block; } }
 
-@media all and (min-width: 1201px) {
+@media all and (min-width: 1401px) {
   .archive-image-container {
     column-count: 5; } }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1400px) {
   .archive-image-container {
     column-count: 4; } }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1200px) {
   .archive-image-container {
     column-count: 3; } }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
   .archive-image-container {
     column-count: 2; } }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 600px) {
   .archive-image-container {
     column-count: 1; } }
