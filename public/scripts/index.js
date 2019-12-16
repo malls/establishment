@@ -132,27 +132,50 @@
 
             return body + '</div></div>';
         },
+
         projecthighlight(data, folder) {
             const firstRow = data[0];
             let body = `
                 <div class="runway-highlight-name">
                     <div class="credit-text sideways pad-sideways">
                         ${firstRow.project}
-                        <span class="pad-name">photography by ${firstRow.photographer}</span>
+                        <span class="pad-name">photography by ${firstRow.photographer || ''}</span>
                     </div>
                     <a href="/">X</a>
                 </div>
                 <div class="horiz-parent">
-                    <div class="horiz-scroll-full-height">
-                        <div class="third-grid"></div>`;
+                <div class="horiz-scroll-full-height">`;
 
-            data.forEach(item => {
-                console.log('item', item)
-                body += `<div class="third-grid" style="background-image: url('/images/project-highlight${folder}/${item.images}')"></div>`;
-            });
+             data.forEach(item => {
+                body += `<img src="/images/project-highlight/${folder.replace('/','')}/${item.images}" class="runway-hightlight-image" alt="">`;
+             });
 
-            return body + '</div></div>'
+            return body + '</div></div>';
+
+
         }
+        //for third grid
+        // projecthighlight(data, folder) {
+        //     const firstRow = data[0];
+        //     let body = `
+        //         <div class="runway-highlight-name">
+        //             <div class="credit-text sideways pad-sideways">
+        //                 ${firstRow.project}
+        //                 <span class="pad-name">photography by ${firstRow.photographer}</span>
+        //             </div>
+        //             <a href="/">X</a>
+        //         </div>
+        //         <div class="horiz-parent">
+        //             <div class="horiz-scroll-full-height">
+        //                 <div class="third-grid"></div>`;
+
+        //     data.forEach(item => {
+        //         console.log('item', item)
+        //         body += `<div class="third-grid" style="background-image: url('/images/project-highlight${folder}/${item.images}')"></div>`;
+        //     });
+
+        //     return body + '</div></div>'
+        // }
     }
 
     Papa.parse(`csvs/${page}${specificPage}.csv`, {
